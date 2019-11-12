@@ -1,0 +1,37 @@
+{
+  "name": "electron-updater_tutoral",
+  "version": "1.0.0",
+  "description": "Yolo",
+  "main": "main.js",
+  "dependencies": {
+    "electron-updater": "^4.2.0"
+  },
+  "devDependencies": {
+    "electron": "^7.1.1",
+    "electron-builder": "^22.1.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "build": "electron-builder build --mac --publish never",
+    "deploy": "electron-builder build --mac --publish always",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "build": {
+    "appId": "com.wizards.ElectronAutoUpdate",
+    "mac": {
+      "category": "productivity"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MjStrwy/electron-builder-demo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MjStrwy/electron-builder-demo/issues"
+  },
+  "homepage": "https://github.com/MjStrwy/electron-builder-demo#readme"
+}
